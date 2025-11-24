@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NotFound } from './pages/not-found/not-found';
+import { MainLayout as MainLayoutComponent } from '../../shared/components/layouts/main-layout/main-layout';
 
 
 
@@ -9,7 +10,8 @@ import { NotFound } from './pages/not-found/not-found';
     NotFound
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MainLayoutComponent
   ]
 })
 export class NotFoundModule { }

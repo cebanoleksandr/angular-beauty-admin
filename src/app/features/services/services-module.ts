@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Services } from './pages/services/services';
 import { Service } from './pages/service/service';
+import { MainLayout as MainLayoutComponent } from '../../shared/components/layouts/main-layout/main-layout';
 
 
 
@@ -11,7 +12,8 @@ import { Service } from './pages/service/service';
     Service
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MainLayoutComponent
   ]
 })
 export class ServicesModule { }

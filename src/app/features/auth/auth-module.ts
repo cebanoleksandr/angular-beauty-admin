@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Login } from './pages/login/login';
 import { Register } from './pages/register/register';
+import { AuthLayout as AuthLayoutComponent } from '../../shared/components/layouts/auth-layout/auth-layout';
 
 @NgModule({
   declarations: [
@@ -9,7 +10,8 @@ import { Register } from './pages/register/register';
     Register
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AuthLayoutComponent
   ]
 })
 export class AuthModule { }
