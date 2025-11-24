@@ -14,21 +14,35 @@ import { Settings } from './features/settings/pages/settings/settings';
 import { Staff } from './features/staff/pages/staff/staff';
 import { Master } from './features/staff/pages/master/master';
 import { NotFound } from './features/not-found/pages/not-found/not-found';
+import { MainLayout as MainLayoutComponent } from './shared/components/layouts/main-layout/main-layout';
+import { AuthLayout as AuthLayoutComponent } from './shared/components/layouts/auth-layout/auth-layout';
 
 const routes: Routes = [
-  { path: '', component: Dashboard },
-  { path: 'login', component: Login },
-  { path: 'register', component: Register },
-  { path: 'calendar', component: Calendar },
-  { path: 'clients', component: Clients },
-  { path: 'clients/:id', component: Client },
-  { path: 'materiales', component: Materiales },
-  { path: 'materiales/:id', component: Material },
-  { path: 'services', component: Services },
-  { path: 'services/:id', component: Service },
-  { path: 'settings', component: Settings },
-  { path: 'staff', component: Staff },
-  { path: 'staff/:id', component: Master },
+  {
+    path: '',
+    component: AuthLayoutComponent,
+    children: [
+      { path: 'login', component: Login },
+      { path: 'register', component: Register },
+    ]
+  },
+  {
+    path: '',
+    component: MainLayoutComponent,
+    children: [
+      { path: '', component: Dashboard },
+      { path: 'calendar', component: Calendar },
+      { path: 'clients', component: Clients },
+      { path: 'clients/:id', component: Client },
+      { path: 'materiales', component: Materiales },
+      { path: 'materiales/:id', component: Material },
+      { path: 'services', component: Services },
+      { path: 'services/:id', component: Service },
+      { path: 'settings', component: Settings },
+      { path: 'staff', component: Staff },
+      { path: 'staff/:id', component: Master },
+    ]
+  },
   { path: '**', component: NotFound },
 ];
 
