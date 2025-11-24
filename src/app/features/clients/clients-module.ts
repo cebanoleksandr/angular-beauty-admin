@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Clients } from './pages/clients/clients';
 import { Client } from './pages/client/client';
-import { MainLayout as MainLayoutComponent } from '../../shared/components/layouts/main-layout/main-layout';
+import { MainLayoutModule } from '../../shared/components/layouts/main-layout/main-layout-module';
 
 
 
@@ -13,7 +13,7 @@ import { MainLayout as MainLayoutComponent } from '../../shared/components/layou
   ],
   imports: [
     CommonModule,
-    MainLayoutComponent
+    MainLayoutModule
   ]
 })
 export class ClientsModule { }

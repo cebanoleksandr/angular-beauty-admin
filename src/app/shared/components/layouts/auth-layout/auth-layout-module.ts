@@ -6,7 +6,8 @@ import { AuthLayout as AuthLayoutComponent } from './auth-layout';
 @NgModule({
   declarations: [AuthLayoutComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    AuthLayoutModule
   ],
   exports: [AuthLayoutComponent]
 })

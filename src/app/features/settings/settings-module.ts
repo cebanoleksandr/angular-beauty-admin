@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Settings } from './pages/settings/settings';
-import { MainLayout as MainLayoutComponent } from '../../shared/components/layouts/main-layout/main-layout';
+import { MainLayoutModule } from '../../shared/components/layouts/main-layout/main-layout-module';
 
 
 
@@ -11,7 +11,7 @@ import { MainLayout as MainLayoutComponent } from '../../shared/components/layou
   ],
   imports: [
     CommonModule,
-    MainLayoutComponent
+    MainLayoutModule
   ]
 })
 export class SettingsModule { }
