@@ -30,7 +30,7 @@ const routes: Routes = [
     path: '',
     component: MainLayoutComponent,
     children: [
-      { path: '', component: Dashboard },
+      { path: 'dashboard', component: Dashboard },
       { path: 'calendar', component: Calendar },
       { path: 'clients', component: Clients },
       { path: 'clients/:id', component: Client },

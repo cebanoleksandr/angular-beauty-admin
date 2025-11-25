@@ -8,13 +8,13 @@ import { MainLayoutModule } from './shared/components/layouts/main-layout/main-l
 
 @NgModule({
   declarations: [
-    App,
+    App
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AuthLayoutModule,
-    MainLayoutModule
+    MainLayoutModule,
   ],
   providers: [
     provideBrowserGlobalErrorListeners()
