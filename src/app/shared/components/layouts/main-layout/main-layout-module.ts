@@ -4,6 +4,7 @@ import { MainLayout as MainLayoutComponent } from './main-layout';
 import { RouterModule } from '@angular/router';
 import { HeaderModule } from '../header/header-module';
 import { NgIconsModule } from '@ng-icons/core';
+import { SidebarModule } from '../sidebar/sidebar-module';
 
 @NgModule({
   declarations: [MainLayoutComponent],
@@ -11,7 +12,8 @@ import { NgIconsModule } from '@ng-icons/core';
     CommonModule,
     RouterModule,
     HeaderModule,
-    NgIconsModule
+    NgIconsModule,
+    SidebarModule
   ],
   exports: [MainLayoutComponent]
 })
