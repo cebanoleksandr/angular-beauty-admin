@@ -17,13 +17,15 @@ import { AuthLayout as AuthLayoutComponent } from './components/layouts/auth-lay
 import { MainLayout as MainLayoutComponent } from './components/layouts/main-layout/main-layout';
 import { HeaderComponent } from './components/layouts/header/header';
 import { Sidebar as SidebarComponent } from './components/layouts/sidebar/sidebar';
+import { SidebarItemComponent } from './components/layouts/sidebar-item/sidebar-item';
 
 @NgModule({
   declarations: [
     MainLayoutComponent,
     SidebarComponent,
     HeaderComponent,
-    AuthLayoutComponent
+    AuthLayoutComponent,
+    SidebarItemComponent,
   ],
   imports: [
     CommonModule,
@@ -46,6 +48,7 @@ import { Sidebar as SidebarComponent } from './components/layouts/sidebar/sideba
     SidebarComponent,
     HeaderComponent,
     AuthLayoutComponent,
+    SidebarItemComponent
   ]
 })
 export class SharedModule { }
